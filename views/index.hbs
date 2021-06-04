@@ -1,0 +1,73 @@
+<table class="table table-bordered">
+  <thead>
+    <tr>
+      <th colspan="3">
+        <div id="back-link"><a href="/page/1">BACK TO THE START</a></div>
+        <div>
+          <p>page: {{pageId}}</p>
+        </div>
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td>
+        {{#if stories.2.sentence}}
+          <a
+            href="/page/{{stories.2.page}}/2/{{stories.2.sentence}}/{{stories.2.isClicked}}"
+          >{{stories.2.sentence}}</a>
+        {{else}}
+          <form action="/add/2" method="post">
+            <textarea name="sentence"></textarea><br />
+            <input type="submit" value="INSERT" />
+          </form>
+        {{/if}}
+      </td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>
+        {{#if stories.3.sentence}}
+          <a
+            href="/page/{{stories.3.page}}/3/{{stories.3.sentence}}/{{stories.3.isClicked}}"
+          >{{stories.3.sentence}}</a>
+        {{else}}
+          <form action="/add/3" method="post">
+            <textarea name="sentence"></textarea><br />
+            <input type="submit" value="INSERT" />
+          </form>
+        {{/if}}
+      </td>
+      <td>{{stories.1.sentence}}</td>
+      <td>
+        {{#if stories.4.sentence}}
+          <a
+            href="/page/{{stories.4.page}}/4/{{stories.4.sentence}}/{{stories.4.isClicked}}"
+          >{{stories.4.sentence}}</a>
+        {{else}}
+          <form action="/add/4" method="post">
+            <textarea name="sentence"></textarea><br />
+            <input type="submit" value="INSERT" />
+          </form>
+        {{/if}}
+      </td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>
+        {{#if stories.5.sentence}}
+          <a
+            href="/page/{{stories.5.page}}/5/{{stories.5.sentence}}/{{stories.5.isClicked}}"
+          >{{stories.5.sentence}}</a>
+        {{else}}
+          <form action="/add/5" method="post">
+            <textarea name="sentence"></textarea><br />
+            <input type="submit" value="INSERT" />
+          </form>
+        {{/if}}
+      </td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
